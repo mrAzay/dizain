@@ -4,47 +4,47 @@
 			fill: none;
 			transform-origin: center;
 			transform: rotate(-90deg);
-		}</style><script>let items = document.querySelectorAll('.consultation__item');
-		let index = 0
+		}</style><script>// let items = document.querySelectorAll('.consultation__item');
+		// let index = 0
 
-		function nextItem() {
-			items[index].classList.remove('active')
-			if (index === items.length - 1) {
-				index = 0
-			} else {
-				index++
-			}
-			items[index].classList.add('active')
-		}
+		// function nextItem() {
+		// 	items[index].classList.remove('active')
+		// 	if (index === items.length - 1) {
+		// 		index = 0
+		// 	} else {
+		// 		index++
+		// 	}
+		// 	items[index].classList.add('active')
+		// }
 
-		function changeSVG() {
-			items[index].querySelector('.consultation__item-imgs').innerHTML =
-				`<svg class="progress-ring" width="120" height="120">
-  			<circle class="progress-ring__circle" cx="60" cy="60" r="58"></circle>
-				</svg>`
-			startCircule()
-		}
+		// function changeSVG() {
+		// 	items[index].querySelector('.consultation__item-imgs').innerHTML =
+		// 		`<svg class="progress-ring" width="120" height="120">
+  	// 		<circle class="progress-ring__circle" cx="60" cy="60" r="58"></circle>
+		// 		</svg>`
+		// 	startCircule()
+		// }
 
-		function startCircule() {
-
-
-			const circle = document.querySelector('.progress-ring__circle');
-			const r = circle.r.baseVal.value;
-			const circumference = 2 * Math.PI * r;
+		// function startCircule() {
 
 
-			circle.style.strokeDasharray = `${circumference} ${circumference}`;
-			circle.style.strokeDashoffset = circumference;
+		// 	const circle = document.querySelector('.progress-ring__circle');
+		// 	const r = circle.r.baseVal.value;
+		// 	const circumference = 2 * Math.PI * r;
 
-			function setProgress(percent) {
-				const offset = circumference - percent / 100 * circumference;
-				circle.style.strokeDashoffset = offset;
-			}
 
-			setProgress(20);
-		}
+		// 	circle.style.strokeDasharray = `${circumference} ${circumference}`;
+		// 	circle.style.strokeDashoffset = circumference;
 
-		setInterval(() => {
-			nextItem()
-			changeSVG()
-		}, 1000)</script></body></html>
+		// 	function setProgress(percent) {
+		// 		const offset = circumference - percent / 100 * circumference;
+		// 		circle.style.strokeDashoffset = offset;
+		// 	}
+
+		// 	setProgress(20);
+		// }
+
+		// setInterval(() => {
+		// 	nextItem()
+		// 	changeSVG()
+		// }, 1000)</script></body></html>

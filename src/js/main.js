@@ -14,6 +14,10 @@ const blogSlider = new Swiper('.blog__slider', {
 		550: {
 			slidesPerView: 2,
 			spaceBetween: 24
+		},
+		1200: {
+			slidesPerView: 3,
+			spaceBetween: 48,
 		}
 	}
 });
