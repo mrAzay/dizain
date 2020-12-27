@@ -1,0 +1,41 @@
+.offer {
+	&__title {
+		margin-bottom: 24px;
+	}
+
+	&__text {
+		font-family: Rubik;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 23px;
+		color: #242433;
+		padding-bottom: 96px;
+
+		span {
+			margin-left: 60px;
+			display: block;
+		}
+	}
+}
+
+.politics{
+	&__title {
+		margin-bottom: 24px;
+	}
+
+	&__text {
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 32px;
+		color: #242433;
+		padding-bottom: 96px;
+
+		span {
+			margin-left: 60px;
+			display: block;
+		}
+	}
+}

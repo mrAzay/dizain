@@ -1,0 +1,144 @@
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: Noto Sans;
+	line-height: 32px;
+	color: #242433;
+}
+
+*,
+*::before,
+*::after,
+	{
+	box-sizing: inherit;
+}
+
+*,
+*:active,
+*:focus {
+	outline: transparent;
+
+}
+
+html,
+body {
+	height: 100%;
+	position: relative;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+h1,
+h2 {
+	font-family: PT Mono;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 44px;
+	line-height: 145%;
+	letter-spacing: -0.02em;
+	color: #242433;
+}
+
+button:focus,
+input:focus {
+	outline: transparent;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+.flex {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.--just-space {
+	justify-content: space-between;
+}
+
+.--just-end {
+	justify-content: flex-end;
+}
+
+.--align-str {
+	align-items: stretch;
+}
+
+.--align-center {
+	align-items: center;
+}
+
+.--align-end {
+	align-items: flex-end;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1360px;
+	padding: 0 20px;
+}
+
+img {
+	display: block;
+}
+
+ul,
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.keys-active,
+.sotr-active {
+	a {
+		position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			border-bottom: 2px solid #242433;
+			width: 100%;
+			height: 2px;
+			bottom: -8px;
+		}
+	}
+}
+
+@media (max-width: 1300px) {
+	.container {
+		padding: 0 20px;
+	}
+}
+
+@media(max-width: 900px) {
+	h1,
+	h2 {
+		font-size: 26px !important;
+	}
+}
+
+
+@media(max-width: 670px) {
+
+	h1,
+	h2 {
+		font-size: 22px !important;
+	}
+}

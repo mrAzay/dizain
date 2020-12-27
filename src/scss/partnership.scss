@@ -1,0 +1,185 @@
+.partnership {
+	padding-top: 96px;
+
+	&__title {
+		
+		margin-bottom: 24px;
+	}
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 112px;
+	}
+}
+
+.partnership-item {
+	padding-bottom: 88px;
+
+	&__title {
+		font-size: 44px;
+		line-height: 64px;
+		letter-spacing: -0.02em;
+		color: #242433;
+		margin-left: 48px;
+
+		&-wrap {
+			height: 240px;
+			display: flex;
+			align-items: center;
+			box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.04);
+			background-position: right;
+		}
+	}
+
+	&__items {
+		margin-top: 48px;
+		max-width: 1096px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__item {
+		box-shadow: 0px 8px 16px rgba(17, 17, 17, 0.04);
+		padding: 48px;
+
+
+		&-quest {
+			position: relative;
+			padding-left: 27px;
+			color: #656475;
+
+			&::before {
+				content: url(../img/kavichki.svg);
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+
+		&.border {
+			border: 2px solid #F5F5FA;
+		}
+
+		&-title {
+			color: #242433;
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 32px;
+			margin-bottom: 24px;
+		}
+
+		&-text {
+			font-size: 16px;
+			line-height: 24px;
+			color: #242433;
+
+			&-long {
+				font-size: 16px;
+				line-height: 32px;
+				color: #656475;
+			}
+
+
+
+
+			&+& {
+				margin-top: 16px;
+			}
+		}
+
+		.grey {
+			color: #B1B0BF;
+			margin-right: 4px;
+		}
+
+		&-btn {
+			background: #FFB81C;
+			border-radius: 4px;
+			padding: 16px 36px;
+			color: #FFFFFF;
+			letter-spacing: 0.5px;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 20px;
+			border: none;
+			margin-top: 24px;
+			display: block;
+			width: fit-content;
+		}
+
+		&+& {
+			margin-top: 24px;
+		}
+	}
+}
+
+@media(max-width: 1024px) {
+	.partnership-item__title {
+		max-width: 360px;
+	}
+}
+
+@media(max-width: 968px) {
+	.partnership__items {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.cooperation__item-list-wrapper {
+			display: none;
+		}
+
+		.cooperation__item+.cooperation__item {
+			margin-left: 0;
+			margin-top: 48px;
+		}
+
+		.cooperation__item {
+			max-width: 60%;
+		}
+	}
+}
+
+@media(max-width: 632px) {
+	.partnership-item__title {
+		margin-left: 24px;
+		font-size: 22px;
+		line-height: 28px;
+		max-width: 200px;
+
+		&-wrap {
+			height: 144px;
+		}
+	}
+}
+
+@media(max-width: 600px) {
+	.partnership__items {
+		.cooperation__item {
+			max-width: none;
+			width: 100%;
+		}
+	}
+
+	.partnership-item__item {
+		padding: 24px 16px;
+	}
+
+	.partnership-item__item-title {
+		font-size: 22px;
+		line-height: 28px;
+	}
+}
+
+
+@media(max-width: 435px) {
+	.partnership-item__title-wrap {
+		background-position-x: calc(100% - -38px);
+		background-size: cover;
+	}
+
+
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+	@@include('components/page/_2_header.html', {
+		'keys': 'keys-active',
+		'sotr': ''
+	})
+
+	@@include('components/bem-blocks/back.html')
+
+	<main class="main-keys">
+		<section class="keys">
+			<div class="container">
+				<div class="keys__inner">
+					<h1 class="keys__title">Кейсы</h1>
+					<div class="keys__items">
+						<a href="partnership-item.html" class="keys__item">
+							<img src="img/keys1.jpg" alt="" class="keys__img">
+							<p class="keys__text">Повышение выручки ресторана на 150%</p>
+						</a>
+						<a href="partnership-item.html" class="keys__item">
+							<img src="img/keys2.jpg" alt="" class="keys__img">
+							<p class="keys__text">Как удвоить выручку, внедрив современные технологии продаж </p>
+						</a>
+						<a href="partnership-item.html" class="keys__item">
+							<img src="img/keys3.jpg" alt="" class="keys__img">
+							<p class="keys__text">Как создать УТП и увеличить выручку за 1 месяц при производстве кофе</p>
+						</a>
+						<a href="partnership-item.html" class="keys__item">
+							<img src="img/keys4.jpg" alt="" class="keys__img">
+							<p class="keys__text">“Мы в 6 раз увеличили выручку и вернулись к докризисным показателям»</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include('components/bem-blocks/contacts.html')
+	</main>
+	@@include('components/page/_3_footer.html')
+	@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

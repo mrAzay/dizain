@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+	@@include('components/page/_2_header.html', {
+	'keys': '',
+	'sotr': ''
+	})
+
+	<main>
+		<section class="error">
+			<div class="container">
+				<div class="error__inner">
+					<img src="img/404.png" alt="" class="error__img">
+					<h1 class="error__title">
+						Кажется, той страницы что вы ищите не существует
+					</h1>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+
+	@@include('components/page/_3_footer.html')
+	@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

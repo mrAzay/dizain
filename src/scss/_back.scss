@@ -1,0 +1,21 @@
+.back-wrapper {
+	padding-top: 96px;
+	padding-bottom: 24px;
+}
+
+.back {
+	font-family: Noto Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+	color: #656475;
+	letter-spacing: 0.5px;
+	display: flex;
+	align-items: center;
+
+	svg {
+		margin-right: 8px;
+	}
+}
+

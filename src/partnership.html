@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+	@@include('components/page/_2_header.html', {
+	'keys': '',
+	'sotr': 'sotr-active'
+	})
+
+	@@include('components/bem-blocks/back.html')
+
+	<main class="partnership-main">
+		@@include('components/bem-blocks/partnership-item.html')
+
+		@@include('components/bem-blocks/contacts.html')
+	</main>
+	@@include('components/page/_3_footer.html')
+	@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

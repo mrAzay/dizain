@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('components/page/_1_head.html',{
+'title': 'Easy webdev startpack',
+'description': 'Easy webdev startpack by budfy',
+'keywords': 'Webdev, Gulp4, html, css, js, jquery',
+'favicon': 'img/favicon.png'
+})
+
+<body>
+	@@include('components/page/_2_header.html', {
+	'keys': '',
+	'sotr': ''
+	})
+
+	@@include('components/bem-blocks/back.html')
+	<main class="partnership-item-main">
+		<section class="partnership-item">
+			<div class="container">
+				<div class="partnership-item__inner">
+					<div class="partnership-item__title-wrap" style="background-image: url(img/cons1.jpg);">
+						<h1 class="partnership-item__title">
+							Индивидуальная консультация
+						</h1>
+					</div>
+					<div class="partnership-item__items">
+						<div class="partnership-item__item border">
+							<p class="partnership-item__item-text">
+								<span class="grey">Тайминг:</span> <span>1 рабочий час</span>
+							</p>
+							<p class="partnership-item__item-text">
+								<span class="grey">Стоимость</span> <span>9 000 руб</span>
+							</p>
+							<p class="partnership-item__item-text">
+								<span class="grey">Формат</span> <span>удаленно (по skype,zoom, телефону), личная встреча</span>
+							</p>
+							<a href="#" class="partnership-item__item-btn">
+								Записаться
+							</a>
+						</div>
+						<div class="partnership-item__item">
+							<p class="partnership-item__item-text-long">
+								Текст в свободной форме - В чем плюсы консультации, какие преимущества, выгоды <br>
+								Один-пару абзацев
+							</p>
+						</div>
+						<div class="partnership-item__item">
+							<div class="partnership-item__item-title">
+								Структура консультации
+							</div>
+							<p class="partnership-item__item-text-long">
+								Вкратце по шагам описана структура: например сначала мы уточняем запрос, потом я рассказываю вам как решить вашу проблему. Как правило мы успеваем разобрать ХХ вопросов
+							</p>
+						</div>
+						<div class="partnership-item__item">
+							<div class="partnership-item__item-title">
+								Частые вопросы, решаемые на данного вида консультации
+							</div>
+							<div class="partnership-item__item-quest">
+								Вопрос 1
+							</div>
+							<div class="partnership-item__item-quest">
+								Вопрос 1
+							</div>
+							<div class="partnership-item__item-quest">
+								Вопрос 1
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include('components/bem-blocks/partnership-item.html')
+
+	</main>
+	@@include('components/page/_3_footer.html')
+	@@include('components/page/_4_scripts.html')
+</body>
+
+</html>

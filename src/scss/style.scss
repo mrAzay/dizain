@@ -1,0 +1,18 @@
+@import 'mixins';
+@import 'vars';
+@import 'fonts';
+@import 'local-fonts';
+@import 'global';
+@import 'svg';
+@import 'bem-blocks';
+/* NOTE - import here your style modules */
+@import 'header';
+@import 'index';
+@import 'keys';
+@import '_back';
+@import '_contacts';
+@import 'partnership';
+@import 'offer';
+@import '404';
+@import 'footer';
+@import'media';
