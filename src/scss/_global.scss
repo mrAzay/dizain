@@ -123,20 +123,23 @@ a {
 
 .link-yelow {
 	transition: ease all 0.5s;
-	path{
+
+	path {
 		transition: ease all 0.5s;
 	}
 
 	&:hover {
 		color: #FFB81C;
-		path{
+
+		path {
 			fill: #FFB81C;
 		}
 	}
 
 	&:active {
 		color: #DE9900;
-		path{
+
+		path {
 			fill: #DE9900;
 		}
 	}
@@ -158,14 +161,16 @@ a {
 
 .btn-yellow {
 	transition: ease all 0.5s;
-	path{
+
+	path {
 		transition: ease all 0.5s;
 	}
 
 	&:hover {
 		color: #DE9900;
 		border-color: #DE9900;
-		path{
+
+		path {
 			fill: #DE9900;
 		}
 	}
@@ -173,7 +178,8 @@ a {
 	&:active {
 		color: #DE9900;
 		border-color: #DE9900;
-		path{
+
+		path {
 			fill: #DE9900;
 		}
 	}
@@ -211,5 +217,15 @@ a {
 	h1,
 	h2 {
 		font-size: 22px !important;
+	}
+}
+
+@media (max-width: 600px) {
+	.container {
+		padding: 0 15px;
+	}
+
+	.swiper-button-next, .swiper-button-prev{
+		padding: 16px 12px !important;
 	}
 }

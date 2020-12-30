@@ -156,11 +156,19 @@
 }
 
 @media(max-width: 600px) {
+	.partnership{
+		padding-top: 0;
+	}
 	.partnership__items {
 		.cooperation__item {
 			max-width: none;
 			width: 100%;
 		}
+	}
+	.partnership-item{
+		padding-bottom: 48px;
+		border-bottom: 1px solid #F5F5FA;
+		margin-bottom: 48px;
 	}
 
 	.partnership-item__item {
