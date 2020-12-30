@@ -58,7 +58,8 @@ gulp.task('bem_styles', () => {
 gulp.task('libs_styles', () => {
 	return gulp
 		.src([
-			'node_modules/normalize.css/normalize.css'
+			'node_modules/normalize.css/normalize.css',
+			'node_modules/aos/dist/aos.css'
 			/* insert here path to libs and plugins css/scss files by comma, like 'node_modules/lib-1/lib-1.css','node_modules/lib-2/lib-2.scss'  */
 		])
 		.pipe(map.init())
@@ -121,8 +122,7 @@ gulp.task('bem_js', () => {
 gulp.task('libs_js', () => {
 	return gulp
 		.src([
-			'node_modules/jquery/dist/jquery.min.js'
-			/* insert here path to libs and plugins js files, like 'node_modules/lib-1/lib-1.js','node_modules/lib-2/lib-2.js'  */
+			'node_modules/aos/dist/aos.js'
 		])
 		.pipe(map.init())
 		.pipe(concat('libs.min.js'))

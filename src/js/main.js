@@ -64,4 +64,6 @@ document.querySelector('.header__nav-item-btn').addEventListener('click', () => 
 	document.querySelector('body').style.overflow = 'auto'
 })
 
+AOS.init();
+
 
