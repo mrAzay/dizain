@@ -42,7 +42,7 @@
 }
 
 @media (max-width: 780px) {
-
+	
 	.header__nav {
 		visibility: hidden;
 		position: fixed;
@@ -107,6 +107,7 @@
 			position: absolute;
 			top: 21px;
 			left: 16px;
+			display: block !important;
 		}
 
 		&-item-link {
