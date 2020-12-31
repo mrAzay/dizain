@@ -4,6 +4,10 @@
 	width: 100%;
 	z-index: 22;
 
+	.header__nav-item-logo {
+		display: none;
+	}
+
 	&__inner {
 		display: flex;
 		align-items: center;
@@ -45,7 +49,7 @@
 		top: 0;
 		right: 0;
 		width: 100%;
-		transform: translateX(-200%);
+		transform: translateY(-200%);
 		height: 100%;
 		background: #242433;
 		box-shadow: 0px 32px 64px rgba(36, 36, 51, 0.14);
@@ -68,7 +72,7 @@
 		}
 
 		&.active {
-			transform: translateX(0);
+			transform: translateY(0);
 			visibility: visible;
 		}
 
@@ -86,7 +90,8 @@
 				display: block;
 				text-align: center;
 			}
-			&:last-child{
+
+			&:last-child {
 				margin-left: 50px !important;
 			}
 		}

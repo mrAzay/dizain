@@ -122,6 +122,9 @@
 }
 
 @media(max-width: 968px) {
+	.cooperation__item {
+		max-width: 425px;
+	}
 	.partnership__items {
 		flex-direction: column;
 		align-items: center;
@@ -136,9 +139,7 @@
 			margin-top: 48px;
 		}
 
-		.cooperation__item {
-			max-width: 60%;
-		}
+
 	}
 }
 
@@ -157,7 +158,7 @@
 
 @media(max-width: 600px) {
 	.partnership{
-		padding-top: 0;
+		padding-top: 42px;
 	}
 	.partnership__items {
 		.cooperation__item {
